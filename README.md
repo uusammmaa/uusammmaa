@@ -34,16 +34,16 @@ Python, FastAPI, Redis, PostgreSQL, Node.js, microservice architecture, plus the
 
 ---
 
-## Currently building
+## Featured projects
 
-**RAG evaluation harness**
-Retrieval precision and recall, faithfulness scoring, and a measured comparison of chunking strategies. Knowing whether retrieval is good is the part most projects skip.
+**[AI research agent](https://github.com/uusammmaa/ai-research-agent)**
+Agentic research workflow with 18 mock evals, including citation accuracy and groundedness, OpenTelemetry tracing and cost tracked per run. 105 tests.
 
-**Traced multi-agent workflow**
-LangGraph with real tool calls, retry and fallback logic, tracing wired in, and token cost tracked per run.
+**[RAG API on pgvector and Pinecone](https://github.com/uusammmaa/rag-api-pgvector-pinecone)**
+Retrieval API with an eval harness comparing 3 chunking strategies, reaching recall@5 0.798 and MRR 0.577 in mock mode. 116 tests.
 
-**Production LLM service**
-FastAPI with streaming, caching, rate limiting, structured output validation, containerised and deployed.
+**[AI engineer portfolio](https://github.com/uusammmaa/ai-engineer-portfolio)**
+Live demos of the projects above.
 
 ---
 
@@ -51,9 +51,7 @@ FastAPI with streaming, caching, rate limiting, structured output validation, co
 
 Most client work sits in private repositories. A sample of what I have shipped:
 
-- Multi-agent orchestration layer coordinating specialised LLM agents across ERP workflows, with shared state, tool calling against internal systems and recovery on long runs
-- AI analytics engine that turns a natural language prompt plus filters into engagement reports generated from raw product data, inside a social media management platform used by enterprise customers
+- Multi-agent orchestration layer coordinating specialised LLM agents across business workflows, with shared state, tool calling against internal systems and recovery on long runs
+- AI analytics engine that turns a natural language prompt plus filters into reports generated from raw product data
 - Standalone AI chat microservice with Redis-backed sessions, SSE token streaming and a two-layer context system dispatching dynamic tool calls against analytics data
-- RAG-backed Slack assistant answering from an internal knowledge base, with a cited source on every answer
-- Tender scraping to CMS publishing pipeline: Playwright scraping, LLM rewriting into Dutch vacancy posts, HTML output for review
-- Lead enrichment and outreach automation processing thousands of records with per-lead LLM personalisation
+- RAG-backed internal assistant answering from a knowledge base, with a cited source on every answer
